@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload() {
+            // DOM Hierarchy
+            // window.document.images[0].src = "../public/images/asp.jpg";
+            // window.document.forms[0].elements[0].value = "Register";
+            // window.document.forms[1].elements[1].value = "Login";
+
+            // Name
+            // pic.src = "../public/images/asp.jpg";
+            // frmRegister.btnRegister.value = "Register";
+            // frmLogin.btnLogin.value = "Login";
+
+            //ID
+            // document.getElementById("pic").src = "../public/images/asp.jpg";
+            // document.getElementById("btnRegister").value = "Register";
+            // document.getElementById("btnLogin").value = "Login";
+
+            //CSS Selectors
+            document.querySelector("img").src = "../public/images/asp.jpg";
+            document.querySelector("#btnRegister").value = "Register";
+            document.querySelector(".btnLogin").value = "Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img width="200" height="200" border="1" name="pic" id="pic">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            Your Mobile: <input type="text"><input type="button" id="btnRegister" name="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            Your Email: <input type="email"><input class="btnLogin" type="button" id="btnLogin" name="btnLogin">
+        </form>
+    </div>
+</body>
+</html>
