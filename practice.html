@@ -5,61 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .product {
-            display: grid;
-            grid-template-columns: 3fr 6fr 3fr;
-            font-family: Arial;
+    <script>
+        function bodyload(){
+            document.getElementById("user").innerHTML = location.search.substring(location.search.indexOf("=")+1);
         }
-        .rating {
-            background-color: green;
-            color:white;
-            padding: 3px;
-            border-radius: 5px;
-        }
-        ul {
-            margin-left: -20px;
-            color:gray;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-    </style>
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </script>
 </head>
-<body>
-   <div class="product">
-      <div>
-        <img src="public/images/mob.webp" height="300">
-      </div>
-      <div>
-         <div>
-            <h3> <font color="gray"><span class="bi bi-heart-fill"></span></font> <font color="blue">realme C30 (Lake Blue, 32 GB)</font></h3>
-         </div>
-         <div>
-            <span class="rating"> <span class="bi bi-star-fill"></span> 4.3 </span> <span><font color="gray"> &nbsp; &nbsp; 23400 ratings & 3500 reviews </font></span>
-         </div>
-         <div>
-            <ul type="disc">
-                <li>2 GB RAM | 32 GB ROM | Expandable Upto 1 TB</li>
-                <li>16.51 cm (6.5 inch) HD+ Display</li>
-                <li>8MP Rear Camera | 5MP Front Camera</li>
-                <li>5000 mAh Lithium Ion Battery</li>
-                <li>Unisoc T612 Processor</li>
-                <li>1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In-Box Accessories</li>
-            </ul>
-         </div>
-      </div>
-      <div>
-        <div>
-            <span><font size="7">&#8377;5,749</font> <img src="public/images/flipkart.png" width="150" height="30"></span>
-        </div>
-        <div><strike>&#8377;8,499</strike> <font color="green">&nbsp; 32% off</font></div>
-        <div>Free delivery</div>
-        <div><img src="">flipkart assured</div>
-        <div>Upto <b>&#8377;5,200</b><br>Off on Exchange</div>
-        <font color="green"><b>Bank offer</b></font>
-    </div>
-   </div>
+<body onload="bodyload()">
+    <p>Hello ! <span id="user"></span></p>
 </body>
 </html>

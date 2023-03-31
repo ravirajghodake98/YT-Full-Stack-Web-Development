@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topic {
+            width: 350px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        .main {
+            display: flex;
+        }
+        .menu {
+            font-size: 25px;
+            text-align: center;
+        }
+        .topic:target {
+            background-color: yellow;
+            color: black;
+        }
+        .menu a:link {
+            color: blue;
+        }
+        .menu a:visited {
+            color: red;
+        }
+        .menu a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <span><a href="#html">HTML</a></span>|
+        <span><a href="#css">CSS</a></span>|
+        <span><a href="#js">Javascript</a></span>
+    </div>
+    <div class="main">
+        <div id="html" class="topic">
+            <h2>HTML</h2>
+            <ol>
+                <li>Semantic elements</li>
+                <li>Normal Elements</li>
+            </ol>
+        </div>
+        <div id="css" class="topic">
+            <h2>CSS</h2>
+            <ol>
+                <li>Selectors</li>
+                <li>Rules</li>
+            </ol>
+        </div>
+        <div id="js" class="topic">
+            <h2>Javascript</h2>
+            <ol>
+                <li>Variables</li>
+                <li>Operators</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

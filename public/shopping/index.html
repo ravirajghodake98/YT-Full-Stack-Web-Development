@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            border: 1px solid black;
+            background-color: orange;
+            color: white;
+            width: 100px;
+            padding: 10px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html" target="frameBody">Home</a></li>
+            <li><a href="kid.html" target="frameBody">Kid</a></li>
+            <li><a href="woman.html" target="frameBody">Woman</a></li>
+            <li><a href="man.html" target="frameBody">Man</a></li>
+        </ul>
+    </nav>
+    <main>
+        <iframe name="frameBody" src="home.html" width="100%" height="500"></iframe>
+    </main>
+</body>
+</html>

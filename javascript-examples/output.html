@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DeleteClick() {
+            // ALERT
+            // alert("Delete record \n record will be deleted")
+
+            // CONFIRM
+            // result = confirm("delete record");
+            // if (result == true) {
+            //     alert("Record deleted");
+            // } else {
+            //     alert("you click cancel")
+            // }
+
+            // DOCUMENT.WRITE
+            // result = confirm("Delete Record");
+            // if (result == true) {
+            //     document.write("<font color='red'><i>Record Deleted..</i></font>");
+            // } else {
+            //     alert("you click cancel");
+            // }
+
+            // innerHTML
+            // result = confirm("Delete Record");
+            // if (result == true) {
+            //     document.querySelector("p").innerHTML = "<font color='red'>Record Deleted Successfully</font>";
+            // } else {
+            //     alert ("you clicked cancel");
+            // }
+
+            //innerText
+            // result = confirm("Delete Record");
+            // if (result == true) {
+            //     document.querySelector("p").innerText = "Record Deleted Successfully";
+            // } else {
+            //     alert ("you clicked cancel");
+            // }
+
+            // outerHTML
+            // result = confirm("Delete Record");
+            // if (result == true) {
+            //     document.querySelector("p").outerHTML = "<h2>Record Deleted Successfully</h2>";
+            // } else {
+            //     alert ("you clicked cancel");
+            // }
+
+            // console methods
+            now = new Date();
+            console.warn("Warning: Delete button clicked at " + now.toLocaleTimeString());
+            result = confirm("Delete Record");
+            if (result == true) {
+                document.querySelector("p").outerHTML = "<h2>Record Deleted Successfully</h2>";
+                console.error("Ok button clicked at " + now.toLocaleTimeString());
+            } else {
+                document.querySelector("p").innerText = "You cancelled";
+                console.log("Cancel button clicked at" + now.toLocaleTimeString());
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <p align="center"></p>
+</body>
+</html>

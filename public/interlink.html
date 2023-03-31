@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <h2>Inter Document Links</h2>
+            <ol>
+                <li><a href="intralink.html">Intra Link</a></li>
+                <li><a href="https://www.amazon.in/" target="_blank">Amazon</a></li>
+                <li><a href="javascript:window.open('./images/android.jpg','Android','width=700 height=700')">Android jpg</a></li>
+                <li><a href="./images/Images.pdf" download="pdf">PDF file</a></li>
+                <li><a href="./images/Images.docx">Word file</a></li>
+                <li><a href="tel:9876543210">Call us</a></li>
+                <li><a href="mailto:random@gmail.com">random@gmail.com</a></li>
+                <li><a href="skype:asjdf@gmail.com"> skype</a></li>
+                <li><a href="https://www.youtube.com/embed/f-rmm08YyRA" target="frameBody">youtube</a></li>
+            </ol>
+        </nav>
+        <main>
+            <iframe width="100%" height="500" name="frameBody"></iframe>
+        </main>
+    </section>
+</body>
+</html>
