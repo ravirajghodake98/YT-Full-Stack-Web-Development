@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CreateClick() {
+            // result = prompt("Enter folder name","New_folder");
+            // if(result == null) {
+            //     alert("you cancelled");
+            // } else if (result == "") {
+            //     alert ("bhai folder ka naam daal de")
+            // } else {
+            //     document.querySelector("p").innerHTML += "Folder created: " + result + "<br>";
+            // }
+
+            foldername = prompt("folder ka naam daal");
+            purpose = prompt("purpose of " + foldername + "folder")
+            document.querySelector("p").innerHTML = "Folder created: " + foldername + "<br>used for: " + purpose;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="CreateClick()">Create Folder</button>
+    <p></p>
+</body>
+</html>
