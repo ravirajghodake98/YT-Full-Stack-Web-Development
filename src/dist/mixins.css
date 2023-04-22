@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+form {
+  border: 2px solid gray;
+  padding: 20px;
+}
+form button {
+  width: 100%;
+  font-size: 20px;
+}
+
+form {
+  background-color: rgb(198, 228, 240);
+}
+form h3 {
+  color: black;
+}
+form button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/*# sourceMappingURL=mixins.css.map */

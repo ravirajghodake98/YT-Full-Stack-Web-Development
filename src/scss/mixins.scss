@@ -1,0 +1,43 @@
+$theme: yellow;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+form {
+    border: 2px solid gray;
+    padding: 20px;
+    button {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@mixin ApplyTheme($formBackground, $headingColor, $btnBackground) {
+    form {
+        background-color: $formBackground;
+        h3 {
+            color: $headingColor;
+        }
+        button {
+            background-color: $btnBackground;
+            color: white;
+            border: none;
+        }
+    }
+}
+
+@if $theme==green {
+    @include ApplyTheme(rgb(129, 223, 129),rgb(16, 196, 16) ,rgb(40, 105, 40) )
+}
+@else if $theme==red {
+    @include ApplyTheme(rgb(217, 107, 107),rgb(153, 22, 22) ,rgb(122, 23, 23) )
+}
+@else if $theme==blue {
+    @include ApplyTheme(rgb(116, 116, 214),rgb(26, 26, 189) , rgb(37, 37, 108) )
+}
+@else {
+    @include ApplyTheme(rgb(198, 228, 240),black , black)
+}

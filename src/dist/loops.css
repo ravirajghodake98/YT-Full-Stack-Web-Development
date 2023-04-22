@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  border: 2px solid black;
+}
+
+.box-1 {
+  margin-left: 0px;
+}
+
+.box-2 {
+  margin-left: 100px;
+}
+
+.box-3 {
+  margin-left: 200px;
+}
+
+.box-4 {
+  margin-left: 300px;
+}
+
+/*# sourceMappingURL=loops.css.map */

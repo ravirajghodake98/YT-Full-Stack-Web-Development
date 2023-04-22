@@ -1,0 +1,13 @@
+$shadow: 2px 2px 3px;
+$border: 2px solid red;
+$padding: 40px;
+
+.container {
+    border: $border;
+    box-shadow: $shadow gray;
+    padding: $padding;
+    h2 {
+        box-shadow: $shadow black;
+        padding: $padding - 20px;
+    }
+}

@@ -1,0 +1,13 @@
+@import "variable";
+
+@mixin BoxStyle($howMany) {
+    @for $i from 1 through $howMany {
+        .box-#{$i} {
+            margin-left: ($i*100px)-100px;
+            padding: $padding;
+            box-shadow: $shadow;
+            border: $border;
+            width: 100px;
+        }
+    }
+}

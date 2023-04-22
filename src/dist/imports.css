@@ -1,0 +1,33 @@
+.box-1 {
+  margin-left: 0px;
+  padding: 5px;
+  box-shadow: 2px 2px 3px gray;
+  border: 2px solid red;
+  width: 100px;
+}
+
+.box-2 {
+  margin-left: 100px;
+  padding: 5px;
+  box-shadow: 2px 2px 3px gray;
+  border: 2px solid red;
+  width: 100px;
+}
+
+.box-3 {
+  margin-left: 200px;
+  padding: 5px;
+  box-shadow: 2px 2px 3px gray;
+  border: 2px solid red;
+  width: 100px;
+}
+
+.box-4 {
+  margin-left: 300px;
+  padding: 5px;
+  box-shadow: 2px 2px 3px gray;
+  border: 2px solid red;
+  width: 100px;
+}
+
+/*# sourceMappingURL=imports.css.map */

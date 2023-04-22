@@ -1,0 +1,11 @@
+.container {
+  border: 2px solid red;
+  box-shadow: 2px 2px 3px gray;
+  padding: 40px;
+}
+.container h2 {
+  box-shadow: 2px 2px 3px black;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=variables.css.map */

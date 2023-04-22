@@ -1,0 +1,17 @@
+$padding: 20px;
+
+@function SetPadding($newValue) {
+    @return $padding + $newValue
+}
+
+body {
+    padding: $padding;
+    form {
+        border: 1px solid red;
+        padding: SetPadding(10);
+        h3 {
+            border: 1px solid #0000ff;
+            padding: SetPadding(2);
+        }
+    }
+}
