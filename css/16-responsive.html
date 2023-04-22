@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media screen and (min-width: 600px) and (orientation:landscape) {
+        @media screen and (orientation:landscape) and (min-width:600px) {
             body {
                 background-color: yellow;
             }
@@ -14,7 +14,7 @@
                 display: flex;
             }
         }
-        @media screen and (max-width:600px) and (orientation:portrait) {
+        @media screen and (orientation:portrait) and (max-width:600px) {
             body {
                 background-color: lime;
             }
@@ -26,9 +26,13 @@
         nav div {
             width: 100px;
             background-color: white;
-            color:red;
+            color: red;
+            font-size: 30px;
             padding: 5px;
-            margin:5px;
+            margin: 5px;
+        }
+        h1 {
+            font-size: 40px;
         }
     </style>
 </head>

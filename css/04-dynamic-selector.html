@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        img:hover {
+            width: 150px;
+            height: 150px;
+            transition: 2s;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            color: green;
+        }
+        #Terms+span {
+            color: red;
+        }
+        #Terms:checked+span {
+            color: green;
+        }
+        /* #UserName+span {
+            display: none;
+        }
+        #UserName:focus+span {
+            display: inline;
+        } */
+        #UserName:read-only {
+            background-color: lightgray;
+            cursor: not-allowed;
+        }
+        button:disabled {
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        User Name: <input type="text" id="UserName" value="john" readonly placeholder="name in capital letters">
+        <!-- <span>Name in capital letters</span> -->
+        <br><br>
+        <button disabled>Submit</button>
+    </div>
+    <img src="../public/images/asp.jpg">
+    <div>
+        <a href="amazon-home">Amazon Home</a>
+    </div>
+    <div>
+        <input type="checkbox" id="Terms"> <span>I Agree</span>
+    </div>
+</body>
+</html>

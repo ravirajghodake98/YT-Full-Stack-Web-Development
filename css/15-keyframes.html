@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes Slide {
+            from {
+                margin-left: 110%;
+            }
+            50% {
+                transform: scale(2);
+                margin-top: 300px;
+            }
+            to {
+                margin-left: 0%;
+            }
+        }
+        @keyframes zoomEffect {
+            from {
+                margin-left: 110%;
+            }
+            50% {
+                font-size: 100px;
+            }
+            to {
+                margin-left: 0%;
+            }
+        }
+        img {
+            animation-name: Slide;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .title {
+            animation-name: zoomEffect;
+            animation-duration: 5s;
+        }
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <span class="title">
+        WELCOME
+    </span>
+    <img src="../public/images/asp.jpg" width="150" height="150">
+</body>
+</html>

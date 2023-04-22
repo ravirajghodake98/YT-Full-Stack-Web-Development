@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #UserName:required {
+            border: 2px solid red;
+        }
+        #UserName+span {
+            display: none;
+        }
+        #UserName:required+span {
+            display: block;
+        }
+        #UserName:valid+span {
+            display: none;
+        } */
+        #Age:in-range {
+            border: 2px solid green;
+        }
+        #Age:out-of-range {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <dl>
+        <dt>User</dt>
+        <dd>
+            <input type="text" required id="UserName">
+            <span>Name required</span>
+        </dd>
+    </dl> -->
+    <dl>
+        <dt>Age</dt>
+        <dd>
+            <input type="number" min="15" max="40" id="Age">
+        </dd>
+    </dl>
+</body>
+</html>

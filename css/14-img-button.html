@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        img {
+            width: 300px;
+            height: 400px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        .fashion {
+            text-align: center;
+            height: 390px;
+            width: 300px;
+            overflow: hidden;
+        }
+        .icons {
+            font-size: 30px;
+            color: black;
+        }
+        .icons span {
+            margin-right: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 30px;
+            background-color: rgba(255,255,255,0.4);
+        }
+        .fashion:hover .icons {
+            transform: translateY(-80px);
+            transition: 1s;
+        }
+        .fashion .icons {
+            transition: 1s;
+        }
+        .icons span:hover {
+            background-color: red;
+            color: white;
+            transform: 900ms;
+            cursor: pointer;
+        }
+        .pics {
+            display: flex;
+        }
+        .fashion:hover img {
+            transform: translate(-100%);
+            transition: 2s;
+        }
+        .fashion img{
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="fashion">
+        <div class="pics">
+            <img src="../public/images/kid.jpg">
+            <img src="../public/images/woman.jpg">
+        </div>
+        <div class="icons">
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart4"></span>
+            <span class="bi bi-share"></span>
+        </div>
+    </div>
+</body>
+</html>
