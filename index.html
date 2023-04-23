@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @media screen and (min-width: 600px) and (orientation:landscape) {
-            body {
-                background-color: yellow;
-            }
-            nav {
-                display: flex;
-            }
-        }
-        @media screen and (max-width:600px) and (orientation:portrait) {
-            body {
-                background-color: lime;
-            }
-            nav {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-        nav div {
-            width: 100px;
-            background-color: white;
-            color:red;
-            padding: 5px;
-            margin:5px;
-        }
-    </style>
+    <title>Shopping</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
-<body>
-    <h1>Welcome</h1>
-    <nav>
-        <div>Home</div>
-        <div>About</div>
-        <div>Contact</div>
-    </nav>
+<body class="container-fluid">
+    <div class="navbar navbar-dark bg-success navbar-expand-lg">
+       <div class="container-fluid">
+       
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h2 class="navbar-brand">Amazon</h2>
+        <div class="navbar-collapse collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="home.html" target="frameBody" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../public/shopper-template.html" target="frameBody" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Fashion</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Electronics</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item">
+                    <div class="input-group">
+                        <input type="text" placeholder="your search string" class="form-control">
+                        <button class="btn btn-warning">
+                            <span class="bi bi-search"></span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       </div>
+    </div>
+    <iframe width="100%" style="border:none; height: 500px;" name="frameBody">
+
+    </iframe>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
