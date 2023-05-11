@@ -1,0 +1,29 @@
+<script>
+    "use strict"
+    // var x;
+    // x=10;
+    // document.write("x= " + x);
+
+    function f1() {
+        var x;          //declare
+        x=10;           //assign
+        var x;          //shadowing-x
+        x=15;
+        if(x==15) {
+            var y = 20; //initialize
+            var y = 50; //shadowing-y
+        }
+        document.write("x= " + x + "<br>y= " + y);
+    }
+    f1();
+
+    function f2() {
+        var x;
+        x=100;
+        if(x==100) {
+            var y=20;
+        }
+        document.write("x= " + x + "<br>y= " + y)
+    }
+    f2()
+</script>
